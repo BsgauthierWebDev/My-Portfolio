@@ -4,17 +4,45 @@ body {
 
 header {
   background-color: #05235c;
-  font-family: Bookman, "Times New Roman", serif;
-  font-size: 30px;
-  color: white;
-  text-align: center;
   margin-bottom: 50px;
-  display: block;
-  padding: 30px;
 }
 
 header h1 {
   margin: 0;
+  font-family: Bookman, "Times New Roman", serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-family: Times, serif;
+  font-size: 18px;
+  color: white;
+  text-direction: none;
+  margin: 0 20px 0 0;
+  text-decoration: none;
+}
+
+head nav ul li:last-child a {
+  margin-right: 0;
 }
 
 main h2 {
@@ -33,7 +61,6 @@ footer {
   font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
   padding: 20px;
-  margin-top: 20px;
 }
 
 .separate {
@@ -61,8 +88,41 @@ img {
 }
 
 @media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    padding-top: 5px;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
   section {
     padding: 0 10%;
   }
-  
+  group {
+    flex-direction: row;
+  }
+}
+
+/*Form styling*/
+
+form {
+  padding-right: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 150px;
 }
