@@ -112,9 +112,10 @@ img {
   section {
     padding: 0 10%;
   }
-  group {
+  .group {
     display: flex;
     flex-direction: row;
+    margin: 10px;
   }
 }
 
