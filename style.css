@@ -73,12 +73,12 @@ footer {
 }
 
 img {
-  width: 100%;
+  width: 200px;
 }
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
 }
 
@@ -92,7 +92,7 @@ img {
   margin: 10px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -113,6 +113,7 @@ img {
     padding: 0 10%;
   }
   group {
+    display: flex;
     flex-direction: row;
   }
 }
