@@ -1,7 +1,8 @@
+/*Formatting for the entire page. Page is set to default to display for a mobile device.*/
 body {
   margin: 0;
 }
-
+/*Formatting for the header, and all text within*/
 header {
   background-color: #05235c;
   margin-bottom: 50px;
@@ -18,7 +19,7 @@ header h1 {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
+/*This sets how the navigation links will display on the page*/
 header nav {
   display: flex;
   justify-content: center;
@@ -32,11 +33,11 @@ header nav ul {
   flex-direction: row;
   padding-bottom: 0;
 }
-
+/*This removes the bullet points from the navigation items in the unorganized list*/
 header nav ul li {
   list-style-type: none;
 }
-
+/*This sets the look of the links in the navigation list, and removes the underlines from the links*/
 header nav ul li a {
   font-family: Times, serif;
   font-size: 18px;
@@ -45,11 +46,11 @@ header nav ul li a {
   margin: 0 20px 0 0;
   text-decoration: none;
 }
-
+/*This changes the margin of the last link in the list*/
 head nav ul li:last-child a {
   margin-right: 0;
 }
-
+/*This sets the format for the text in the Main section of the page*/
 main h2 {
   font-family: cursive, Arial, sans-serif;
   margin: 10px;
@@ -65,7 +66,7 @@ main nav {
   font-size: 20px;
   font-family: Verdana, Arial, sans-serif;
 }
-
+/*This sets the format for the footer of the page*/
 footer {
   background-color: black;
   margin: 0;
@@ -74,31 +75,31 @@ footer {
   font-size: 10px;
   padding: 20px;
 }
-
+/*This is the formatting to change the background of the flexboxes to create separation between sections of the page. It changes the background color to create a visual break*/
 .separate {
   background-color: #aeafb0;
 }
-
+/*This is the formatting for the images on the page and how they will be sized*/
 img {
   width: 100%;
 }
-
+/*This sets up the flexboxes and details which direction they will display on the page (columns for mobile devices)*/
 .group {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-
+/*This sets the width for a single flexbox item*/
 .item {
   flex: 1;
   margin: 10px;
 }
-
+/*This sets the width for a double flexbox item*/
 .item-double {
   flex: 2;
   margin: 10px;
 }
-
+/*This is where we can change the display of the page for laptop and desktop monitors; anything with a display of more than 600 pixels in width*/
 @media all and (min-width: 600px) {
   header {
     display: flex;
